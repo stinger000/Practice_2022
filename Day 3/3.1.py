@@ -47,3 +47,12 @@ print("Конец прекрасной программы".center(120, "-"))
 
 # Остальные методы строк
 # https://pythonworld.ru/tipy-dannyx-v-python/stroki-funkcii-i-metody-strok.html
+
+string = "0123456789"
+print(string[0:5])  # С нулевого по пятый (не включая)
+print(string[3:6])  # С третьего по шестой
+print(string[:4])   # С начала по четвертый
+print(string[3:])   # С третьего до конца
+print(string[::2])  # Каждый второй символ
+print(string[::3])  # Каждый третий символ
+print(string[::-1]) # Перевернутая строка
