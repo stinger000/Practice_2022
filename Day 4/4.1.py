@@ -56,7 +56,7 @@ def say_n_times(word: str, n=10, shout=False):
         i += 1
 
 # Keyword-аргументы
-say_n_times("Питон лучший", shout=True)
+say_n_times("Питон лучший",n = 0, shout=True)
 
 def minmax(a: int, b: int, c: int) -> (int, int):
     if a == b == c:
@@ -76,3 +76,14 @@ def minmax(a: int, b: int, c: int) -> (int, int):
         _max = a
 
     return _min, _max
+month = 2
+
+days_int_month = [31, 28, 31, 30]
+days_in_january = days_int_month[0]
+print(days_in_january)
+
+if month == 2:
+    if is_leap_year(year):
+        days_in_february = 29
+    else:
+        days_in_february = 28
