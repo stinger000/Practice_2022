@@ -17,15 +17,18 @@ def sep():
     print("-"*120)
 sep()
 
+def print_students(students):
+    i = 0
+    while i < len(students):
+        print(students[i])
+        i += 1
+
 # Определение размера списка
 
 students_count = len(students) # Количество студентов (размер списка)
 
 # Вывод всех элементов из списка
-i = 0
-while i < students_count:
-    print(students[i])
-    i += 1
+print_students(students)
 
 # Изменения элементов массива
 student_to_dismiss_idx = 1  # Индекс элемента, который будет изменен
@@ -33,8 +36,23 @@ new_student_name = "Ананас"  # Новое значение
 print(f"Студент {students[student_to_dismiss_idx]}, его место занял {new_student_name}")
 students[student_to_dismiss_idx] = new_student_name
 
-i = 0
-while i < students_count:
-    print(students[i])
-    i += 1
+print_students(students)
 
+sep()
+# Добавление элементов
+students.append("Бычков")
+
+print_students(students)
+
+sep()
+# Удаление элементов - метод 1
+del students[0]
+
+print_students(students)
+
+sep()
+# Удаление элементов - метод 2
+students.remove("Ананас")
+print_students(students)
+
+# students.remove("Кокос")  # Error
