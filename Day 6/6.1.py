@@ -28,8 +28,8 @@ while i < students_count:
     i += 1
 
 # Изменения элементов массива
-student_to_dismiss_idx = 1
-new_student_name = "Ананас"
+student_to_dismiss_idx = 1  # Индекс элемента, который будет изменен
+new_student_name = "Ананас"  # Новое значение
 print(f"Студент {students[student_to_dismiss_idx]}, его место занял {new_student_name}")
 students[student_to_dismiss_idx] = new_student_name
 
