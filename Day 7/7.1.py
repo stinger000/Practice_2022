@@ -33,6 +33,7 @@ noobies = ["Картошка", "Огурчик Рик"]
 new_group.extend(noobies)
 print(new_group)
 students = new_group
+
 # 8 - списковые срезы
 # new_list = my_list[start:stop:step]
 # start - начальный элемент
@@ -44,3 +45,12 @@ print(f"{students[2:4] = }")  # Со второго по четвертый
 print(f"{students[2:] = }")  # Со второго до конца
 print(f"{students[::2] = }")  # Каждый второй элемент
 print(f"{students[::-1] = }")  # Элементы в обратном порядке
+
+# 9 - проверка вхождения элемента в список
+# Ключевое слово in
+
+students.remove("Ананас")
+if "Ананас" in students:
+    print("Ананас есть в списке студентов")
+else:
+    print("Ананаса нету")
