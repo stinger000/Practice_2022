@@ -8,3 +8,4 @@
 | 4 | [src](Day%204/4.1.py) | [Task](Day%204/tasks.md) | Функции                                                   |
 | 5 | [src](Day%205/5.1.py) | [Task](Day%205/tasks.md) | Продолжение разговора про функции  |
 | 6 | [src](Day%206/6.1.py) | [Task](Day%206/tasks.md) | Списки                                                     |
+| 7 | [src](Day%207/7.1.py) | [Task](Day%207/tasks.md) | Методы списков                                                    |
