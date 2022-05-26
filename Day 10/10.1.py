@@ -27,3 +27,29 @@ print(books)
 for book in bookshelf.keys():
     print(f"В книге {book} {bookshelf.get(book)} страниц")
 
+book = "Мертвые души"
+
+
+# Проверка, присутствует ли ключ в словаре
+if book in books:
+    print(f"{book} присутствует в словаре")
+else:
+    print(f"{book} - такой книги нет")
+
+if book in bookshelf:
+    print(f"{book} присутствует в словаре")
+else:
+    print(f"{book} - такой книги нет")
+
+# Добавление элементов в словарь
+bookshelf["Дубровский"] = 430
+
+print(bookshelf)
+
+# Изменение значения словаря
+bookshelf["Дубровский"] = 429
+print(bookshelf)
+
+# Удаление элементов из словаря
+del bookshelf["Дубровский"]
+print(bookshelf)
