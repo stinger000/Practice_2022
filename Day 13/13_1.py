@@ -65,7 +65,8 @@ def test_1():
         triangles.append(make_triangle_from_keyboard())
 
     for t in triangles:
-        if (area := t.area()) > 0:
+        area = t.area()
+        if area > 0:
             print(area)
         else:
             print("Такого треугольника нет")
