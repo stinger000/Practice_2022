@@ -37,6 +37,60 @@ class Triangle:
         s = (p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5
         return s
 
+    def is_rectangle(self):
+        return self.a == self.b or self.a == self.c or self.b == self.c
+
+    def is_equilateral(self):
+        return self.a == self.b and self.b == self.c
+
+class Rectangle:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def area(self):
+        return self.a * self.b
+
+    def is_rectangle(self):
+        return True
+
+    def is_equilateral(self):
+        return False
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return self.radius ** 2 * math.pi
+
+class Ellipse:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def area(self):
+        return self.a * self.b * math.pi
+
+    def is_rectangle(self):
+        return False
+
+
+class Hypercube:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def area(self):
+        return self.a * self.b * self.c
+
+    def is_rectangle(self):
+        return False
+
+    def is_equilateral(self):
+        return False
+
 
 def make_triangle_from_points(p1: Point, p2: Point, p3: Point) -> Triangle:
     a = p1.distance_to(p2)
